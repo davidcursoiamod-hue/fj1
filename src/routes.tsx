@@ -3,6 +3,11 @@ import { Routes, Route, useParams } from 'react-router-dom';
 import { AppShell } from '@/components/layout/AppShell';
 import { ProjectLayout } from '@/features/project/ProjectLayout';
 import { ModulePlaceholder } from '@/features/project/ModulePlaceholder';
+import { useProjectStore } from '@/store/projectStore';
+import { DatosModule } from '@/features/project/modules/DatosModule';
+import { ParticipantesModule } from '@/features/project/modules/ParticipantesModule';
+import { PoblacionModule } from '@/features/project/modules/PoblacionModule';
+import type { Project } from '@/data/schema';
 
 const HomePage = lazy(() => import('@/features/home/HomePage').then((m) => ({ default: m.HomePage })));
 const SettingsPage = lazy(() => import('@/features/settings/SettingsPage').then((m) => ({ default: m.SettingsPage })));
@@ -16,11 +21,25 @@ function LoadingFallback() {
   );
 }
 
+const REAL_MODULES: Record<string, React.ComponentType<{ project: Project }>> = {
+  datos: DatosModule,
+  participantes: ParticipantesModule,
+  poblacion: PoblacionModule,
+};
+
 function ProjectRoute() {
   const { projectId = '', slug = '' } = useParams();
+  const current = useProjectStore((s) => s.current);
+
+  const RealModule = REAL_MODULES[slug];
+
   return (
     <ProjectLayout projectId={projectId}>
-      <ModulePlaceholder slug={slug} />
+      {RealModule && current ? (
+        <RealModule project={current} />
+      ) : (
+        <ModulePlaceholder slug={slug} />
+      )}
     </ProjectLayout>
   );
 }
