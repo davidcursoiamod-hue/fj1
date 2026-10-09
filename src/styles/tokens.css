@@ -1,0 +1,151 @@
+:root {
+  /* Primary */
+  --primary: #1B6B4A;
+  --on-primary: #FFFFFF;
+  --primary-container: #B7F2CF;
+  --on-primary-container: #002113;
+
+  /* Secondary */
+  --secondary: #4E6354;
+  --on-secondary: #FFFFFF;
+  --secondary-container: #D0E8D5;
+  --on-secondary-container: #0B1F13;
+
+  /* Tertiary */
+  --tertiary: #7A5900;
+  --on-tertiary: #FFFFFF;
+  --tertiary-container: #FFDEA6;
+  --on-tertiary-container: #261A00;
+
+  /* Problem — terracota family for problems/causes/effects */
+  --problem: #9A4521;
+  --on-problem: #FFFFFF;
+  --problem-container: #FFDBCB;
+  --on-problem-container: #351000;
+
+  /* Error */
+  --error: #BA1A1A;
+  --on-error: #FFFFFF;
+  --error-container: #FFDAD6;
+  --on-error-container: #410002;
+
+  /* Surfaces */
+  --surface: #F6FBF4;
+  --surface-container-low: #F0F5EE;
+  --surface-container: #EAEFE8;
+  --surface-container-high: #E4EAE3;
+  --surface-container-highest: #DFE4DD;
+  --on-surface: #181D19;
+  --on-surface-variant: #414942;
+  --outline: #717972;
+  --outline-variant: #C0C9C0;
+
+  /* Scrim & shadow */
+  --scrim: rgba(0, 0, 0, 0.4);
+  --shadow-color: rgba(24, 29, 25, 0.08);
+
+  /* Stage colors — Identificación */
+  --stage-identification: #2B6CB0;
+  --stage-identification-container: #D0E4F5;
+  --stage-identification-on: #FFFFFF;
+  --stage-identification-on-container: #0D2A47;
+
+  /* Stage colors — Preparación */
+  --stage-preparation: #2F855A;
+  --stage-preparation-container: #C2EAD2;
+  --stage-preparation-on: #FFFFFF;
+  --stage-preparation-on-container: #06281A;
+
+  /* Stage colors — Evaluación */
+  --stage-evaluation: #C77700;
+  --stage-evaluation-container: #FFE4B5;
+  --stage-evaluation-on: #FFFFFF;
+  --stage-evaluation-on-container: #2E1A00;
+
+  /* Stage colors — Programación */
+  --stage-programming: #A33B6B;
+  --stage-programming-container: #F5D0E2;
+  --stage-programming-on: #FFFFFF;
+  --stage-programming-on-container: #3A0D24;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Spacing base */
+  --spacing: 4px;
+
+  /* Content width */
+  --content-max: 1200px;
+
+  /* Fonts */
+  --font-sans: 'Roboto Flex', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Roboto Mono', 'SF Mono', monospace;
+
+  /* Spring presets (for JS consumption via framer-motion) */
+  --spring-stiffness: 380;
+  --spring-damping: 32;
+}
+
+.dark {
+  --primary: #9BD5B3;
+  --on-primary: #00391F;
+  --primary-container: #005135;
+  --on-primary-container: #B7F2CF;
+
+  --secondary: #B4CCBA;
+  --on-secondary: #1F3528;
+  --secondary-container: #374B3E;
+  --on-secondary-container: #D0E8D5;
+
+  --tertiary: #F1BE4A;
+  --on-tertiary: #3F2A00;
+  --tertiary-container: #5A4000;
+  --on-tertiary-container: #FFDEA6;
+
+  --problem: #FFB59A;
+  --on-problem: #531B04;
+  --problem-container: #74310B;
+  --on-problem-container: #FFDBCB;
+
+  --error: #FFB4AB;
+  --on-error: #690005;
+  --error-container: #93000A;
+  --on-error-container: #FFDAD6;
+
+  --surface: #0F1411;
+  --surface-container-low: #191E1B;
+  --surface-container: #1D231F;
+  --surface-container-high: #222824;
+  --surface-container-highest: #262D29;
+  --on-surface: #E1E3DE;
+  --on-surface-variant: #C0C9C0;
+  --outline: #8A9389;
+  --outline-variant: #414942;
+
+  --scrim: rgba(0, 0, 0, 0.6);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+
+  --stage-identification: #7DB8EE;
+  --stage-identification-container: #004B80;
+  --stage-identification-on: #001B33;
+  --stage-identification-on-container: #D0E4F5;
+
+  --stage-preparation: #8CDAAF;
+  --stage-preparation-container: #005135;
+  --stage-preparation-on: #002D1A;
+  --stage-preparation-on-container: #C2EAD2;
+
+  --stage-evaluation: #FFCC6E;
+  --stage-evaluation-container: #5A4000;
+  --stage-evaluation-on: #2B1600;
+  --stage-evaluation-on-container: #FFE4B5;
+
+  --stage-programming: #E88AB5;
+  --stage-programming-container: #5A1F3E;
+  --stage-programming-on: #3A0D24;
+  --stage-programming-on-container: #F5D0E2;
+}
